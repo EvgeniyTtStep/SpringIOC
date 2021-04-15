@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="java" class="com.itstep.JavaDeveloper">
+        <property name="name" value="Bob"/>
+        <property name="age" value="50"/>
+        <property name="salary" value="10000"/>
+        <property name="pythonDevelopers">
+            <list>
+               <ref bean="python1"/>
+               <ref bean="python2"/>
+               <ref bean="python3"/>
+            </list>
+        </property>
+    </bean>
+
+    <bean id="python1" class="com.itstep.PythonDeveloper"/>
+    <bean id="python2" class="com.itstep.PythonDeveloper"/>
+    <bean id="python3" class="com.itstep.PythonDeveloper"/>
+
+    <bean id="python" class="com.itstep.PythonDeveloper"/>
+
+
+
+    <bean id="developer" class="com.itstep.DeveloperRunImpl">
+        <constructor-arg name="developer" ref="java"/>
+    </bean>
+
+</beans>
