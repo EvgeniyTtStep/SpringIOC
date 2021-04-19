@@ -1,4 +1,4 @@
-package com.itstep;
+package com.itstep.developer;
 
 import java.util.List;
 

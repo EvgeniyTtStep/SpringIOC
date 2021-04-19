@@ -1,4 +1,4 @@
-package com.itstep;
+package com.itstep.developer;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;

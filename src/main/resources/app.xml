@@ -4,7 +4,7 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans
        http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean id="java" class="com.itstep.JavaDeveloper">
+    <bean id="java" class="com.itstep.developer.JavaDeveloper">
         <property name="name" value="Bob"/>
         <property name="age" value="50"/>
         <property name="salary" value="10000"/>
@@ -17,15 +17,15 @@
         </property>
     </bean>
 
-    <bean id="python1" class="com.itstep.PythonDeveloper"/>
-    <bean id="python2" class="com.itstep.PythonDeveloper"/>
-    <bean id="python3" class="com.itstep.PythonDeveloper"/>
+    <bean id="python1" class="com.itstep.developer.PythonDeveloper"/>
+    <bean id="python2" class="com.itstep.developer.PythonDeveloper"/>
+    <bean id="python3" class="com.itstep.developer.PythonDeveloper"/>
 
-    <bean id="python" class="com.itstep.PythonDeveloper"/>
+    <bean id="python" class="com.itstep.developer.PythonDeveloper"/>
 
 
 
-    <bean id="developer" class="com.itstep.DeveloperRunImpl">
+    <bean id="developer" class="com.itstep.developer.DeveloperRunImpl">
         <constructor-arg name="developer" ref="java"/>
     </bean>
 

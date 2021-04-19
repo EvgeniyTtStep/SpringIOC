@@ -1,4 +1,4 @@
-package com.itstep;
+package com.itstep.developer;
 
 public class Run {
     public static void main(String[] args) {

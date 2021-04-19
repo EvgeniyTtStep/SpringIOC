@@ -1,4 +1,4 @@
-package com.itstep;
+package com.itstep.developer;
 
 public class PythonDeveloper implements Developer {
     @Override
